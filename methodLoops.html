@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7 Methods to Loop</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>7 Methods to Loop in Javascript</h1>
+      <button onclick="window.history.back()" class="action-button">
+        Voltar para 5 Useful Web APIs
+      </button>
+
+      <div class="container">
+        <h2 class="title-tool">For Loop</h2>
+        <pre class="code-preview">
+const numbers = [22, 34, 46, 58]
+
+for (let i = 0; i &lt; numbers.length; i++) {
+   console.log(numbers[i] * 2)
+}
+
+// Result: 44 68 92 116
+        </pre>
+      </div>
+
+      <div class="container">
+        <h2 class="title-tool">While Loop</h2>
+        <pre class="code-preview">
+const numbers = [22, 34, 46, 58];
+let i = 0;
+
+while (i &lt; numbers.length) {
+   console.log(numbers2[i] * 2);
+   i++;
+}
+
+// Result: 44 68 92 116
+         </pre
+        >
+      </div>
+
+      <div class="container">
+        <h2 class="title-tool">DO-WHILE LOOP</h2>
+        <pre class="code-preview">
+const numbers = [22, 34, 46, 58];
+let i = 0;
+
+do {
+   console.log(numbers[i] * 2);
+   i++;
+} while (j &lt; numbers3.length);
+
+// Result: 44 68 92 116
+         </pre
+        >
+      </div>
+
+      <div class="container">
+        <h2 class="title-tool">FOR-OF LOOP</h2>
+        <pre class="code-preview">
+const numbers = [22, 34, 46, 58];
+
+for (const num of numbers) {
+   console.log(num * 2);
+}
+
+// Result: 44 68 92 116
+         </pre
+        >
+      </div>
+
+      <div class="container">
+        <h2 class="title-tool">FOR-IN LOOP</h2>
+        <pre class="code-preview">
+const numbers = {
+   1: 22,
+   2: 34,
+   3: 46,
+   4: 58,
+};
+   
+for (const num in numbers) {
+   console.log(numbers[num] * 2);
+}
+
+// Result 44 68 92 116
+         </pre
+        >
+      </div>
+
+      <div class="container">
+        <h2 class="title-tool">MAP LOOP</h2>
+        <pre class="code-preview">
+const numbers = [22, 34, 46, 58];
+
+const doubleofNumbers = numbers.map((num) => {
+   return num * 2;
+});
+
+// Result: [44, 68, 92, 116]
+         </pre
+        >
+      </div>
+
+      <div class="container">
+        <h2 class="title-tool">FOR-EACH LOOP</h2>
+        <pre class="code-preview">
+const numbers = [22, 34, 46, 58];
+
+numbers.forEach((num) => {
+   console.log(num * 2);
+});
+
+// Result 44 68 92 116
+         </pre
+        >
+      </div>
+    </main>
+    <script defer src="./methodLoops.js"></script>
+  </body>
+</html>
